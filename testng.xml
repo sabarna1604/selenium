@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <target name="run-testng">
+       <testng classpathref="common.class.path">  
+           <parameter name="ip" value="localhost" /> 
+           <parameter name="port" value="4444" />
+		   <parameter name="browser" value="firefox" />
+		   <parameter name="website" value="http://www.google.com" />
+      
+    <classes>
+      <class name="test.NewTestexample"/>
+    </classes>
+    
+       </target>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
